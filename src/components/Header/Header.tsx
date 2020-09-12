@@ -1,12 +1,12 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 
-import Button from "../Button/Button";
+import { Button } from "src/components/Button";
 
-import pencil from "../../assets/icons/pencil.svg";
+import pencil from "src/assets/icons/pencil.svg";
 
 import { SHeader, SMenu, SMenuItem } from "./styled";
 
-const Header: FunctionComponent = () => (
+const Header: React.FC = () => (
   <SHeader>
     <img src={pencil} alt="pencil icon" />
     <SMenu>
@@ -17,6 +17,4 @@ const Header: FunctionComponent = () => (
   </SHeader>
 );
 
-//todo: add fonts https://dev.to/alaskaa/how-to-import-a-web-font-into-your-react-app-with-styled-components-4-1dni
-
-export default Header;
+export { Header };

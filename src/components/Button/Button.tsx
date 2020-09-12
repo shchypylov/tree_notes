@@ -1,6 +1,6 @@
-import React, { FunctionComponent, ReactChildren } from "react";
+import React, { ReactChildren } from "react";
 
-import { colors } from "../../constants";
+import { colors } from "src/constants";
 import { SButton } from "./styled";
 
 interface IProps {
@@ -8,8 +8,8 @@ interface IProps {
   children: ReactChildren | string;
 }
 
-const Button: FunctionComponent<IProps> = ({ type, children }: IProps) => (
+const Button: React.FC<IProps> = ({ type, children }: IProps) => (
   <SButton background={colors[type]}>{children}</SButton>
 );
 
-export default Button;
+export { Button };

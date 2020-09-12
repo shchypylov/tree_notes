@@ -1,0 +1,23 @@
+@import "reset";
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 600;
+  src: local("Roboto"), url("../fonts/Roboto-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 100;
+  src: local("Roboto"), url("../fonts/Roboto-Light.ttf") format("ttf");
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
