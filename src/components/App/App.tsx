@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 
 import Header from "../Header/Header";
 import { SApp } from "./styled";
 
-const App: FunctionComponent = () => (
+const App: React.FC = () => (
   <SApp>
     <Header />
   </SApp>
